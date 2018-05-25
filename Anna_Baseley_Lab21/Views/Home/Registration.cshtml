@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+}
+
+<script src="~/Scripts/JavaScript.js"></script>
+
+<h2>Please fill out the form to register</h2>
+<br /><br />
+<form name="userReg" action="/Home/AddUser" method="post">
+    <input type="text" name="FirstName" placeholder="First Name"/>
+    <br /><br />
+    <input type="text" name="LastName" placeholder="Last Name"/>
+    <br /><br />
+    <input type="email" name="Email" placeholder="example@example.com"/>
+    <br /><br />
+    <input type="text" name="PhoneNumber" placeholder="xxx-xxx-xxxx"/>
+    <br /><br />
+    <input type="password" name="Password" placeholder="Password"/>
+    <br /><br />
+    <input type="submit" value="Register"/>
+</form>
+
+
