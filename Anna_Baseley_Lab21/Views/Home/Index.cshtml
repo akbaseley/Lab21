@@ -2,8 +2,31 @@
     ViewBag.Title = "GC Coffee Shop";
 }
 
-<h2>Welcome to the @ViewBag.Title</h2>
-
+<h2>Welcome to the @ViewBag.Title!</h2>
+<br />  
 <form action="/Home/Registration" method="get">
     <input type="submit" value="Register Here"/>
 </form>
+<br />  <br />  
+<form action="/Home/SearchByItemName" method="get">
+    <input type="text" name="item" placeholder="Item Name" /> 
+    <input type="submit" value="Search" />
+</form>
+<br /><br />    
+<div class="panel-collapse">
+    <div class="panel-primary">
+        
+        @foreach (var i in ViewBag.ItemList)
+        {
+            <div class="col-md-6 col-xs-6">
+
+                <h4>@i.Name</h4>
+                <h5>@i.Description</h5>
+                <h5>Quantity: @i.Quantity</h5>
+                <h5>$@i.Price</h5>
+            </div>
+        }
+
+    </div>
+</div>
+

@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "ShowItemDetails";
+}
+@model Anna_Baseley_Lab21.Models.Item
+<h2>Edit Item Details</h2>
+<br />  <br />
+
+<form action="/Home/SaveItemUpdates" method="post">
+    Item Name: <input readonly="" value="@Model.Name" name="Name"/><br /><br />
+    Description: <input type="text" value="@Model.Description" name="Description"/><br /><br />
+    Quantity: <input type="text" value="@Model.Quantity" name="Quantity"/><br /><br />
+    Price: <input type="text" value="@Model.Price" name="Price"/><br /><br />
+    <input type="submit" value="Save Changes"/> <br />  <br />  
+</form>
+
