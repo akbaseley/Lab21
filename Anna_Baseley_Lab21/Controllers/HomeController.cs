@@ -153,7 +153,7 @@ namespace Anna_Baseley_Lab21.Controllers
             }
             else
             {
-                ViewBag.ErrorMessage = "Oops! It does not look as if something went wrong!";
+                ViewBag.ErrorMessage = "Oops! Something appears to have gone wrong!";
                 return View("Error");
             }
         }
