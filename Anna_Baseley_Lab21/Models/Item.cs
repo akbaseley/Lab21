@@ -11,33 +11,12 @@ namespace Anna_Baseley_Lab21.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
-
+    
     public partial class Item
     {
-        [Required]
         public string Name { get; set; }
-
-        [Required]
         public string Description { get; set; }
-
-        [Required]
-        [RegularExpression(@"^[1-9]$", ErrorMessage ="Quantities are available in 1 through 9.")]
         public int Quantity { get; set; }
-
-        [Required]
-        [RegularExpression(@"^[0-9]+(\.[0-9][0-9])?$", ErrorMessage = "Invalid Currency Entered.")]
         public double Price { get; set; }
-      
-        public Item(string name, string description, int quantity, double price)
-        {
-            Name = name;
-            Description = description;
-            Quantity = quantity;
-            Price = price;
-        }
-
-        public Item() { }
     }
 }

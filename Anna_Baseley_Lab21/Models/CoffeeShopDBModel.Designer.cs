@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\akbas\Documents\GrandCircus\Labs\Anna_Baseley_Lab21\Anna_Baseley_Lab21\Models\CoffeeShopDBModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\akbas\source\repos\Lab21through26\Anna_Baseley_Lab21\Models\CoffeeShopDBModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

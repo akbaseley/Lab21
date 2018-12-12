@@ -32,11 +32,6 @@ namespace Anna_Baseley_Lab21.Controllers
             return View();
         }
 
-        public ActionResult Registration()
-        {
-            return View();
-        }
-
         public ActionResult AddUser(User newUser)
         {
             if (ModelState.IsValid)
